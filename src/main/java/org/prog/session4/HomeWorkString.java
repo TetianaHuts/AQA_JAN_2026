@@ -42,7 +42,7 @@ public class HomeWorkString {
             int first = emails[i].indexOf("@");
             int last = emails[i].lastIndexOf("@");
             int dot = emails[i].lastIndexOf(".");
-            if ( first == last && emails[i].indexOf("@") > 3 && first < dot) {
+            if ( first == last && emails[i].indexOf("@") > 2 && first < dot) {
                 System.out.println(emails[i]);
 
         }
