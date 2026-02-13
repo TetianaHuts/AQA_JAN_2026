@@ -42,24 +42,24 @@ public class Main {
 //        int j = 10;
 //        System.out.println(i == j); // true
 //
-//        Owner johnDoe1 = new Owner();
+        Owner johnDoe1 = new Owner();
 //        Owner johnDoe2 = new Owner();
 //        Owner janeDoe = new Owner();
 //
-//        johnDoe1.firstName = "John";
-//        johnDoe1.lastName = "Doe";
+       johnDoe1.firstName = "John";
+        johnDoe1.lastName = "Doe";
 //
 //        johnDoe2.firstName = "John";
 //        johnDoe2.lastName = "Doe";
 //
-//        System.out.println(johnDoe1.hashCode());
-//        System.out.println(johnDoe2.hashCode());
+ //        System.out.println(johnDoe1.hashCode());
+//       System.out.println(johnDoe2.hashCode());
 //        System.out.println(johnDoe1.toString());
 
 //
 
 //
-//        janeDoe.firstName = "Jane";
+ //        janeDoe.firstName = "Jane";
 //        janeDoe.lastName = "Doe";
 //
 //        janeDoe.hashCode();
@@ -70,8 +70,8 @@ public class Main {
 //
 //        System.out.println(janeDoe.equals(johnDoe1));
 //
-//        System.out.println(johnDoe1.hashCode());
-//        System.out.println(johnDoe2.hashCode());
+         System.out.println(johnDoe1.hashCode());
+//       System.out.println(johnDoe2.hashCode());
 //
 //        String s1 = "red";
 //        String s2 = "red";
