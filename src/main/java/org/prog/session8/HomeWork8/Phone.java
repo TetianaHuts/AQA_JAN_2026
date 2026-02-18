@@ -1,5 +1,6 @@
 package org.prog.session8.HomeWork8;
 
+import java.sql.SQLOutput;
 import java.util.Objects;
 
 public abstract class Phone implements IPhone {
@@ -21,15 +22,24 @@ public abstract class Phone implements IPhone {
         }
     }
 
-    public void workWith (String name){
-
-        System.out.print(color + " " + model);
-        System.out.print(" ");
-        unlockScreen();
-        System.out.print(" ");
-        System.out.print("and ");
-        call(name);
-
+    public void workWith (String name) {
+        try {
+            if (name == null) {
+                throw new NullPointerException("No name");
+            }
+            System.out.print(color + " " + model);
+            System.out.print(" ");
+            unlockScreen();
+            System.out.print(" ");
+            System.out.print("and ");
+            call(name);
+        }
+         catch (NullPointerException noName) {
+            System.out.println("===========There is no name" + noName.getMessage() + "================");
+        }
+        finally {
+            System.out.println("=========The end of working==========");
+        }
     }
 
     @Override

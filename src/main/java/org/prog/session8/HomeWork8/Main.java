@@ -20,10 +20,10 @@ public class Main {
         System.out.println("==============================================");
 
         phone1.workWith("Alex");
-        phone2.workWith("Esma");
+        phone2.workWith(null);
         phone3.workWith("Andrew");
         phone4.workWith("Daniel");
-        phone5.workWith("Beth");
+        phone5.workWith(null);
         phone6.workWith("Sandy");
         phone7.workWith("Joy");
 
