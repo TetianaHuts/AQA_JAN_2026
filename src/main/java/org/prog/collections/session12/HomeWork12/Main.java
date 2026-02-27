@@ -31,7 +31,11 @@ public class Main {
         phoneOwners.put(beth, huawei);
 
 
+
+
         System.out.println(phoneOwners.get(new Owner ("Alex")));
+        System.out.println(phoneOwners.get(beth));
+        System.out.println(phoneOwners.get(steve));
 
 
 
