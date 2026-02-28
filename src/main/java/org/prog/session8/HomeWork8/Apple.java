@@ -1,5 +1,7 @@
 package org.prog.session8.HomeWork8;
 
+import java.util.Random;
+
 public class Apple extends Phone {
 
     public Apple(String color, String model) {

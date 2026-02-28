@@ -1,8 +1,11 @@
 package org.prog.session8.HomeWork8;
 
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
+        Random random = new Random();
         Apple phone1 = new Apple ( "white", "14 Pro Max");
 
         Apple phone2 = new Apple(null, "13 Pro" );
@@ -50,7 +53,18 @@ public class Main {
         System.out.println("Phone 5 equals Phone 6? " + phone5.equals(phone6));
         System.out.println("Phone 5 equals Phone 7? " + phone5.equals(phone7));
         System.out.println("Phone 6 equals Phone 7? " + phone6.equals(phone7));
+
+        System.out.println("========== Model Number========");
+        System.out.println(phone1.modelNumber);
+        System.out.println(phone2.modelNumber);
+        System.out.println(phone3.modelNumber);
+        System.out.println(phone4.modelNumber);
+        System.out.println(phone5.modelNumber);
+        System.out.println(phone6.modelNumber);
+        System.out.println(phone7.modelNumber);
     }
+
+
 
 
 }

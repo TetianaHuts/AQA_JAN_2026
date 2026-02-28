@@ -14,16 +14,16 @@ public class Main {
 
     public static void main (String[] args){
 
-        Map<Owner, Set<Phone>> phoneOwners = new HashMap<>();
+        Map<Owner, List<Phone>> phoneOwners = new HashMap<>();
 
         Owner alex = new Owner("Alex");
         Owner steve = new Owner("Steve");
         Owner beth = new Owner("Beth");
 
 
-        Set<Phone> apple = Set.of(new Phone("Iphone 14 Pro Max"), new Phone("Iphone 13"));
-        Set<Phone> xiaomi = Set.of(new Phone("Xiaomi 15"));
-        Set<Phone> huawei = Set.of(new Phone ("Nova 12"));
+        List<Phone> apple = List.of(new Phone("Iphone 14 Pro Max"), new Phone("Iphone 13"));
+        List<Phone> xiaomi = List.of(new Phone("Xiaomi 15"));
+        List<Phone> huawei = List.of(new Phone ("Nova 12"));
 
 
         phoneOwners.put(alex, apple);

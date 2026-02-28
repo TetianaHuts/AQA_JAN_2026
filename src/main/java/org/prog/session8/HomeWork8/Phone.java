@@ -1,14 +1,16 @@
 package org.prog.session8.HomeWork8;
 
-import java.sql.SQLOutput;
 import java.util.Objects;
+import java.util.Random;
 
 public abstract class Phone implements IPhone {
     protected String color;
     protected String model;
+    public int modelNumber;
 
 
-    public Phone(String color, String model ) {
+    public Phone(String color, String model) {
+        Random random= new Random();
         if (color != null) {
             this.color = color;}
         else {
@@ -20,6 +22,7 @@ public abstract class Phone implements IPhone {
         else {
             this.model = "unknown model";
         }
+        this.modelNumber = random.nextInt (5) + 1;
     }
 
     public void workWith (String name) {
