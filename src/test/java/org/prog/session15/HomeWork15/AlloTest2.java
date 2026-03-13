@@ -46,7 +46,7 @@ public class AlloTest2 {
         search.sendKeys("iphone 17 pro max");
         search.sendKeys(Keys.ENTER);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-card']")));
-        java.util.List<WebElement> prices = driver.findElements(By.xpath("//button[contains(@class, 'cart')]"));
+        java.util.List<WebElement> prices = driver.findElements(By.xpath("//*[@class='v-pb']"));
         java.util.List<WebElement> goods = driver.findElements(By.xpath("//span[@class='product-sku__value']"));
         Actions action = new Actions(driver);
         for (int i = 0; i<3; i++){
