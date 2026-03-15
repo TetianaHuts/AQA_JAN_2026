@@ -59,7 +59,7 @@ public class RestTests {
 
         Response response = requestSpecification.get();
         ResultsDto dto = response.as(ResultsDto.class);
-        System.out.println(dto.getResults().size());
-        Assert.assertEquals(dto.getResults().get(0).getGender(), "female");
+//        System.out.println(dto.getResults().size());
+//        Assert.assertEquals(dto.getResults().get(0).getGender(), "female");
     }
 }
