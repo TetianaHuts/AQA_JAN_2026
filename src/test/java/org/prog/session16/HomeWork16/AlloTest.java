@@ -1,5 +1,7 @@
 package org.prog.session16.HomeWork16;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,7 +36,7 @@ public class AlloTest {
         @Test
         public void aloTest() throws InterruptedException {
             AlloPage.loadPage("/?srsltid=AfmBOoqQyPWz2MW4_4scuYaqhFus3liz7uppFJVo37Hx-WlnhBKklQSI");
-            AlloPage.search("iphone 17 pro max");
+            AlloPage.search("iphone");
             WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
             webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-card']")));
             java.util.List<WebElement> prices = driver.findElements(By.xpath("//*[@class='v-pb']"));

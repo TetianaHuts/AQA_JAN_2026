@@ -8,8 +8,7 @@ import java.sql.*;
 
 //TODO: run this and make sure it works
 
-public class
-SQLTests {
+public class SQLTests {
 
     private Connection conn;
 
